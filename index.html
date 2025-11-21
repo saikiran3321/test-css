@@ -2,17 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cross Domain Script Include</title>
-  <script>
-    // Trigger alert on page load
-    window.onload = function() {
-      alert("Cross Domain Script Include");
-    };
-  </script>
 </head>
-<body>
+<body onload="alert('Cross Domain Script Include')">
   <h1>Sample HTML Page</h1>
-  <p>This page triggers an alert when loaded.</p>
+  <p>This page should show an alert as soon as it loads.</p>
 </body>
 </html>
